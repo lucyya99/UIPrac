@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>포플러</title>
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Noto+Sans+KR|Quicksand&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<nav>
+  <div class="navbar">
+      <a class="home" href="index.html">
+        <img src="logo3.9.png" alt="logo">
+        <div id="tagline">3단계 포트폴리오</div>
+      </a>
+      <div class="navbar_right">
+        <a href="projectMain.html">Project</a>
+        <a href="plannerMain.html">Planner</a>
+        <a class="active" href="portfolioMain.html">Portfolio</a>
+        <a href="#">How to</a>
+        <a class="sign_in" href="#">sign in</a>
+      </div>
+  </div>
+</nav>
+<section id="portfolio">
+	<aside class="portfolioAside">
+		<div>
+			<div class="button_submit2">
+				<input type="submit" value="수정">
+			</div>
+			<div class="nameWrap">
+				<img src="profile.9.png" class="profileImg" alt="김예지">
+				<div class="name">김예지</div>
+			</div>
+			<div class="category">
+				<h4>My Bio</h4>
+				<div class="shortline"></div>
+				<div class="bio">
+					한양여자대학교 재학생 <span>김예지</span><br>
+					UI구현 과제로 '포플러' 사이트를 제작 중입니다.<br>
+					취미는 게임이며, <br>
+					게임을 직접 제작하는 것이 저의 목표입니다.<br>
+				</div>
+			</div>
+			<div class="category">
+				<h4>Contact</h4>
+				<div class="shortline"></div>
+				<div>
+					<div class="col-25 alignLeft">phone</div>
+					<div class="col-75 alignLeft">010-5097-0766</div>
+				</div>
+				<div>
+					<div class="col-25 alignLeft">social</div>
+					<div class="col-75 alignLeft">
+						instagram - nuri_babibu<br>
+						facebook - 김예지</div>
+				</div>
+			</div>
+			<div class="category">
+				<h4>My Skill</h4>
+				<div class="shortline"></div>
+				<div class="skillbarWrap">
+					<div class="col-25">홈페이지</div>
+					<div class="col-75">
+						<div class="skillbarback">
+							<div class="skillbar1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skillbarWrap">
+					<div class="col-25">유니티</div>
+					<div class="col-75">
+						<div class="skillbarback">
+							<div class="skillbar2"></div>
+						</div>
+					</div>
+				</div>
+				<div class="skillbarWrap">
+					<div class="col-25">게임제작</div>
+					<div class="col-75">
+						<div class="skillbarback">
+							<div class="skillbar3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<section class="portfolioSection">
+		<div class="portfolioButtonWrap">
+			<div class="portfolioButton">
+				<button type="button">공유</button>
+				<button type="button">다운로드</button>
+				<button type="button">추가</button>
+			</div>
+		</div>
+		<h1 class="lessMargin">My Project</h1>
+		<div class="portfolioButton"></div>
+		<div class="longLine"></div>
+		<div class="timeline">
+			<div class="yearContainer left">
+				<div class="portfolioContent">
+					<h2>◆&nbsp;&nbsp;2018</h2>
+					<button class="collapsible">HTML, CSS, Javascript</button>
+						<p class="collapsibleContents">날짜 :2018.08.28~2018.12.31<br>
+							태그 : 홈페이지 제작<br>
+							<button type="button" class="more">More</button>
+						</p>
+					<button class="collapsible">3D 프린터 실습</button>
+						<p class="collapsibleContents">3D프린터로 호두까기 젠야타 제작<br>
+							천 등 자세한 부분은 구현하지 못하였지만 형태는 실제 캐릭터와 유사<br>
+							<button type="button" class="more">More</button>
+						</p>
+				</div>
+			</div>
+			<div class="yearContainer right">
+				<div class="portfolioContent">
+					<h2>◆&nbsp;&nbsp;2019</h2>
+					<button class="collapsible">자료구조 과제</button>
+						<p class="collapsibleContents alignLeft">날짜 :2019.05.13~2019.05.27<br>
+							태그 : 기타<br>
+							<button type="button" class="more">More</button>
+						</p>
+					<button class="collapsible">게임관련 서적독서</button>
+						<p class="collapsibleContents alignLeft">
+							게임의 심리학<br>
+							게임/기획/개발<br>
+							왜 게임에 빠질까<br>
+							게임프로그래머로 산다는 것<br>
+							<button type="button" class="more">More</button>
+						</p>
+					<button class="collapsible">UI 구현</button>
+						<p class="collapsibleContents alignLeft">날짜 :2019.05.28~2019.06.03<br>
+							태그 : 홈페이지 제작<br>
+							<a href="projectCheck.html"><button type="button" class="more">
+							More</button></a>
+						</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "none") {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  });
+}
+</script>
+<footer>
+	<div class="footerContents">
+		&copy; 한양여대 컴퓨터정보과<br>
+		218210106 김예지<br>
+		email : yeji990427@naver.com<br>
+		phone : 010-5097-0766<br>
+		instagram : <a href="#">nuri_babibu</a><br>
+		facebook : <a href="#">김예지</a>
+	</div>
+</footer>
+</body>
+</html>

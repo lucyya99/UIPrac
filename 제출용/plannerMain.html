@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>포플러</title>
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Noto+Sans+KR|Quicksand&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<nav>
+  <div class="navbar">
+      <a class="home" href="index.html">
+        <img src="logo3.9.png" alt="logo">
+        <div id="tagline">3단계 포트폴리오</div>
+      </a>
+      <div class="navbar_right">
+        <a href="projectMain.html">Project</a>
+        <a class="active" href="plannerMain.html">Planner</a>
+        <a href="portfolioMain.html">Portfolio</a>
+        <a href="#">How to</a>
+        <a class="sign_in" href="#">sign in</a>
+      </div>
+  </div>
+</nav>
+<section id="monthlyPlanner">
+<aside class="monthlyAside">
+  <div>
+    <button type="button" class="asideButton1">일정추가</button>
+  </div>
+  <div class="month">
+    <div class="monthTitle">
+      <input type="button" class="pageMoveButton" value="<">
+      <div>
+        May<br>
+        <span>2019</span>
+      </div>
+      <input type="button" class="pageMoveButton" value=">">
+    </div>
+    <div class="monthTotal">
+      <div class="monthRow">
+        <div class="monthcol">월</div>
+        <div class="monthcol">화</div>
+        <div class="monthcol">수</div>
+        <div class="monthcol">목</div>
+        <div class="monthcol">금</div>
+        <div class="monthcol">토</div>
+        <div class="monthcol">일</div>
+      </div>
+      <div class="monthRow">
+        <div class="monthcol"><div></div></div>
+        <div class="monthcol"><div></div></div>
+        <div class="monthcol">1<div></div></div>
+        <div class="monthcol">2<div class="havingPlan"></div></div>
+        <div class="monthcol">3<div></div></div>
+        <div class="monthcol">4<div></div></div>
+        <div class="monthcol">5<div></div></div>
+      </div>
+      <div class="monthRow">
+        <div class="monthcol">6<div></div></div>
+        <div class="monthcol">7<div></div></div>
+        <div class="monthcol">8<div></div></div>
+        <div class="monthcol">9<div></div></div>
+        <div class="monthcol">10<div></div></div>
+        <div class="monthcol">11<div></div></div>
+        <div class="monthcol">12<div></div></div>
+      </div>
+      <div class="monthRow">
+        <div class="monthcol">13<div></div></div>
+        <div class="monthcol">14<div></div></div>
+        <div class="monthcol">15<div></div></div>
+        <div class="monthcol">16<div></div></div>
+        <div class="monthcol">17<div></div></div>
+        <div class="monthcol">18<div></div></div>
+        <div class="monthcol">19<div></div></div>
+      </div>
+      <div class="monthRow">
+        <div class="monthcol">20<div></div></div>
+        <div class="monthcol">21<div></div></div>
+        <div class="monthcol">22<div></div></div>
+        <div class="monthcol">23<div></div></div>
+        <div class="monthcol">24<div></div></div>
+        <div class="monthcol">25<div></div></div>
+        <div class="monthcol">26<div></div></div>
+      </div>
+      <div class="monthRow">
+        <div class="monthcol">27<div class="havingPlan purple"></div></div>
+        <div class="monthcol">28<div class="havingPlan yellow"></div></div>
+        <div class="monthcol">29<div class="havingPlan red"></div></div>
+        <div class="monthcol">30<div class="havingPlan blackblue"></div></div>
+        <div class="monthcol today">31</div>
+        <div class="monthcol"></div>
+        <div class="monthcol"></div>
+      </div>
+    </div>
+  </div>
+	<div class="asideButton2">
+		<button type="button">INDEX</button>
+		<button type="button">TODO</button>
+		<button type="button" class="active">MEMO</button>
+	</div>
+	<div class="asideContents">
+		<h4 class="h4Margin">MEMO</h4>
+		<div class="shortline">
+	</div>
+	<div class="textInput">
+		<input type="text" id="myInput" placeholder="Subject...">
+	  <span onclick="newElement()" class="addBtn">Add</span>
+  </div>
+  <div class="textUL">
+  	<ul id="myUL">
+      <li>UI 버튼고쳐야 함</li>
+      <li>상단바 고정시켜주고 싶은데...</li>
+      <li>오늘 밥은 삼겹살</li>
+	  </ul>
+  </div>
+</aside>
+<section>
+  <section>
+    <h1 class="lessMargin">My Weekly Plan</h1>
+    <div class="longLine"></div>
+    <div class="pageMoveButtonWrap">
+      <input type="button" class="pageMoveButton" value="<">
+      <div>5월 5번째주</div>
+      <input type="button" class="pageMoveButton" value=">">
+    </div>
+  </section>
+  <div class="week">
+    <div class="weekRow day">
+      <div class="weekCol noline">시간</div>
+      <div class="weekCol noline">월</div>
+      <div class="weekCol noline">화</div>
+      <div class="weekCol noline">수</div>
+      <div class="weekCol noline">목</div>
+      <div class="weekCol noline">금</div>
+      <div class="weekCol noline">토</div>
+      <div class="weekCol noline">일</div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 6시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 7시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 8시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 9시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 10시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 11시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 12시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 1시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 2시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 3시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 4시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 5시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 6시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 7시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 8시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 9시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 10시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오후 11시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 12시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 1시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 2시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 3시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 4시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+    <div class="weekRow">
+      <div class="weekCol noline small">오전 5시</div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+      <div class="weekCol"></div>
+    </div>
+  </div>
+</section>
+</section>
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+<footer>
+	<div class="footerContents">
+		&copy; 한양여대 컴퓨터정보과<br>
+		218210106 김예지<br>
+		email : yeji990427@naver.com<br>
+		phone : 010-5097-0766<br>
+		instagram : <a href="#">nuri_babibu</a><br>
+		facebook : <a href="#">김예지</a>
+	</div>
+</footer>
+</body>
+</html>

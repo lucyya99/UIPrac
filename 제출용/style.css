@@ -1,0 +1,938 @@
+/*
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
+*/
+/*
+  <색상>
+  주요색 : #15304b
+  배경색 : #f3f6fb
+  옅은선색 : #dddfe2
+  보조색 : #F7786B
+  어두운 보조색 : #d36559
+  밝은 남색 : #22385d
+  밝은 회색 : #f1f1f1
+  하늘색 : #8cc3dd
+  아이보리 : #F5F1E7
+*/
+/*----------------------------공통부분-----------------------------*/
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.15em;
+  background-color: #fbfbfb;
+  color: #333;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+div, img{
+  display: block;
+}
+div span{
+  color: #F7786B;
+}
+button{
+  border-style: none;
+}
+section{
+  overflow: auto;
+}
+ul{
+  list-style: none;
+}
+h1{
+  margin-top: 70px;
+  text-align: center;
+  font-size: 1.65em;
+  font-family: 'Maven Pro', sans-serif;
+}
+h2{
+  padding: 14px 16px 14px 0;
+  font-size: 1.5em;
+}
+.longLine, .shortline{
+  width: 100px;
+  height: 3px;
+  margin: 10px auto 15px auto;
+  background-color: #15304b;
+  border-radius: 10px;
+}
+
+.shortline{
+  width: 20px;
+  background-color: #15304b;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #dddfe2;
+}
+
+.navbar a{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  height: 100%;
+  font-size: 1.15em;
+}
+
+.navbar a:hover {
+  color: #F7786B;
+}
+
+.navbar a.active {
+  border-bottom: 4px solid #F7786B;
+  background-color: transparent;
+  color: #F7786B;
+}
+
+.navbar a.logo{
+  padding: 12px 10px 14px 14px;
+}
+
+.navbar_right{
+  height: 100%;
+  float: right;
+}
+
+.navbar_right a.sign_in{
+  color: #7198db;
+}
+
+.navbar #tagline{
+  font-size: 0.7em;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+
+.navbar #tagline:hover{
+  color: #F7786B;
+}
+
+footer{
+  clear: both;
+}
+.footerContents{
+  font-size: 0.85em;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  text-align: center;
+  background-color: #15304b;
+  color: #fbfbfb;
+}
+.footerContents a{
+  color: #fbfbfb;
+}
+.footerContents a:hover{
+  color: #F7786B;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 7px;
+  overflow: hidden;
+}
+
+.alignLeft{
+  text-align: left;
+}
+.alignCenter{
+  text-align: center;
+}
+.alignRight{
+  text-align: right;
+}
+
+.mediumBigFont{
+  font-size: 1.25em;
+}
+/*----------------------------projectMain-----------------------------*/
+.sortWrap{
+  text-align: right;
+}
+.sort{
+  margin-right: 100px;
+}
+
+form.search{
+  margin: 0 auto;
+  max-width: 450px;
+  overflow: auto;
+}
+
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 0.85em;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.search button {
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  background-color: #22385d;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #15304b;
+}
+
+form.search button img{
+  margin: 2px 40%;
+  width: 17px;
+}
+
+.projectBundle{
+  margin-top: 100px;
+  margin-bottom: 200px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 20px;
+  float: left;
+}
+.projectAdd{
+  text-align: center;
+  background-color: #22385d;
+  color: #fbfbfb;
+  width: 200px;
+  height: 300px;
+  padding: 100px 30px 100px 30px;
+}
+a.projectAdd{
+  color: #fbfbfb;
+}
+.projectAdd:hover{
+  background-color: #15304b;
+  transition: .5s;
+}
+.projectWrap{
+  opacity: 0.65;
+  width: 200px;
+  height: 100%;
+}
+.projectWrap:hover{
+  opacity: 1;
+  transition: .5s;
+}
+.projectImg{
+  height: 200px;
+}
+.projectImg img{
+  width: 200px;
+}
+.projectPriority{
+  font-size: 0.75em;
+  text-align: right;
+}
+.progressWrap{
+  width: 100%;
+  background-color: #ddd;
+  height: 5px;
+}
+.progress{
+  background-color: #F7786B;
+  height: 100%;
+}
+.bstyle1{
+  width: 90%;
+}
+.bstyle2{
+  width: 70%;
+}
+.bstyle3{
+  width: 30%;
+}
+.bstyle4{
+  width: 20%;
+}
+.bstyle5{
+  width: 100%;
+}
+.projectTitle{
+  font-size: 1.5em;
+  text-align: center;
+}
+.projectDate{
+  text-align: right;
+  padding-right: 5px;
+  font-size: 0.75em;
+  overflow: auto;
+}
+
+/*----------------------------projectCheck-----------------------------*/
+.radioWrap{
+  cursor: pointer;
+  margin-right: 30px;
+}
+.radioWrap input[type=checkbox]{
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.CProjectTitle{
+  clear: both;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 2em;
+}
+.cProject{
+  background-color: #f1f1f1;
+  float: left;
+  width: 100%;
+  margin: 10px auto;
+}
+.cProject img{
+  width: 20%;
+  margin: 5% 10px 5% 8%;
+  float: left;
+}
+.button_submit{
+  float: right;
+  margin: 10px 0;
+}
+.button_submit input[type=submit]{
+  background-color: #15304b;
+  color: #fbfbfb;
+  padding: 14px 16px;
+  border-style: none;
+  margin-right: 3px;
+}
+.marginButton{
+  width: 90%;
+  text-align: right;
+  margin: 20px 5% 20px 20px;
+}
+.cProjectWrap{
+  float: left;
+  border-radius: 5px;
+  height: 100%;
+  margin: 5% 20px 5% 20px;
+  padding-left: 20px;
+  width: 65%;
+}
+.stepWrap {
+  clear: both;
+  width: 75%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 20px;
+  font-size: 1.25em;
+}
+
+.subStepWrap{
+  float: left;
+  margin-left: 20px;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  font-size: 0.9em;
+}
+.substep{
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+}
+
+.step{
+  float: left;
+  margin: 10px;
+  width: 100%;
+}
+.step input[type=checkbox]{
+  float: right;
+  width: 25px;
+  height: 25px;
+  border-style: none;
+  margin-right: 15%;
+}
+.blankBottom{
+  width: 100%;
+  margin-bottom: 5%;
+}
+/*----------------------------portfolioMain-----------------------------*/
+#portfolio{
+  height: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+#portfolio::after{
+  content: "";
+  clear: both;
+}
+.portfolioSection{
+  float: right;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.portfolioAside{
+  text-align: center;
+  background-color: #F5F1E7;
+  color: #555555;
+  padding: 50px 25px;
+  overflow: auto;
+  float: left;
+  width: 100%;
+  top: 0;
+}
+
+.asideWrap{
+  height: 100%;
+}
+
+.button_submit2{
+  clear:both;
+  text-align: right;
+  margin: 0 10%;
+}
+.button_submit2 input[type=submit]{
+  width: 30%;
+  border: 0;
+  background-color: #22385d;
+  color: #f3f6fb;
+  padding: 10px 5%;
+  border-radius: 5px;
+}
+.button_submit2 input[type=submit]:hover{
+  background-color: #15304b;
+}
+.nameWrap{
+  position: relative;
+  left: 0;
+  width: 80%;
+  margin: 10px 10% 20px 10%;
+}
+
+.profileImg{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.name{
+  width: 100%;
+  background: #555;
+  color: #f3f6fb;
+  text-align: center;
+  font-size: 1.25em;
+  padding: 10px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.category{
+  float: left;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85em;
+}
+.bio{
+  width: 100%;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.asideInfo{
+  text-align: left;
+  font-size: 0.85em;
+}
+.skillbarWrap{
+  clear: both;
+  background-color: white;
+  width: 100%;
+  font-size: 0.85em;
+}
+.skillbarback{
+  margin: 5px 10%;
+  width: 70%;
+  height: 15px;
+  background-color: white;
+}
+.skillbar1{
+  background-color: #b28d94;
+  width: 75%;
+  height: 100%;
+}
+.skillbar2{
+  background-color: #d9f2f9;
+  width: 25%;
+  height: 100%;
+}
+.skillbar3{
+  background-color: #594662;
+  width: 10%;
+  height: 100%;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 10%;
+  background-color: transparent;
+  width: 80%;
+}
+
+.yearContainer {
+  padding: 10px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+.portfolioContent {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.asideButton2 button.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsibleContents {
+  padding: 18px;
+  overflow: hidden;
+  display: block;
+  background-color: #f1f1f1;
+  font-size: 0.9em;
+}
+
+.lessMargin{
+  margin-top: 30px;
+}
+
+.more{
+  float: right;
+  border-style: none;
+  background-color: #F7786B;
+  color: #f3f6fb;
+  padding: 10px;
+  margin: 10px;
+}
+.more:hover{
+  background-color: #d36559;
+}
+.portfolioButton{
+  margin: 20px 0 0 0;
+  float: right;
+  position: relative;
+}
+.portfolioButton button{
+  padding: 14px 16px;
+  background-color: #22385d;
+  color: #f3f6fb;
+  border-radius: 5px;
+}
+.portfolioButton button:hover{
+  background-color: #15304b;
+}
+
+.portfolioButtonWrap{
+  width: 100%;
+  float: left;
+}
+/*----------------------------monthlyPlanner-----------------------------*/
+#monthlyPlanner{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-content: center;
+}
+.pageMoveButtonWrap{
+  clear: both;
+  float: right;
+  display: grid;
+  grid-template-columns: 20% 80% 20%;
+  padding-right: 15%;
+  font-size: 1.15em;
+  text-align: center;
+}
+.pageMoveButton{
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 25%;
+  background-color: #d9d9d9;
+}
+.pageMoveButton:hover{
+  background-color: #AAA;
+}
+.monthlyAside{
+  border-right: 2px solid #dddfe2;
+  padding: 30px 25px;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+.asideButton1{
+  width: 70%;
+  padding: 10px;
+  margin: 5px auto 15px auto;
+  font-size: 1.3em;
+  background-color: #22385d;
+  color: #f3f6fb;
+  border-radius: 20px;
+}
+.asideButton1:hover{
+  background-color: #15304b;
+}
+.asideButton2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 1.25em;
+}
+.asideButton2 button{
+  padding: 10px;
+}
+.asideButton2 button:hover{
+  background-color: #AAA;
+}
+.asideButton2 button.active{
+  background-color: #AAA;
+}
+.textUL ul{
+  padding: 10px;
+}
+
+.textUL ul li {
+  text-align: left;
+  clear: both;
+  cursor: pointer;
+  padding: 12px 8px 12px 12px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 0.75em;
+}
+
+.textUL ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.textUL ul li:hover {
+  background: #ddd;
+}
+
+.textUL ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.textUL ul li span{
+  text-align: center;
+}
+
+.close {
+  clear: both;
+  float: right;
+  width: 10%;
+  height: 100%;
+}
+
+.close:hover {
+  background-color: #F7786B;
+  color: white;
+}
+
+.textInput{
+  float: left;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.textInput input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background-color: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 0.75em;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+.h4Margin{
+  margin-top: 20px;
+}
+.small{
+  font-size: 0.85em;
+}
+.month{
+  float: left;
+  width: 100%;
+  background-color: #F5F1E7;
+  padding: 25px 5px;
+  margin-bottom: 20px;
+  font-size: 0.85em;
+  text-align: center;
+  overflow: hidden;
+}
+.monthTitle{
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  margin: 20px;
+}
+.monthTotal{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5px auto;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+}
+.monthRow{
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+  margin-bottom: 3px;
+}
+.monthcol{
+  padding: 2px;
+  float: left;
+}
+.week{
+  width: 100%;
+  display: grid;
+  grid-template-rows: 
+  50px 50px 50px 50px 50px 50px
+  50px 50px 50px 50px 50px 50px
+  50px 50px 50px 50px 50px 50px
+  50px 50px 50px 50px 50px 50px
+  50px;
+  margin-top: 30px;
+  margin-bottom: 15%;
+}
+.weekRow{
+  width: 80%;
+  height: 100%;
+  margin: auto 10%;
+  padding: 0 5px;
+  display: grid;
+  grid-template-columns: 
+    12.5% 12.5% 12.5% 12.5%
+    12.5% 12.5% 12.5% 12.5%;
+}
+.weekCol{
+  margin: 0 5px;
+  border-left: 1px solid #dddfe2;
+  border-right: 1px solid #dddfe2;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.day{
+  background-color: #F5F1E7;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.noline{
+  border: 0;
+  text-align: center;
+}
+.today{
+  background-color: #F7786B;
+  color: #f3f6fb;
+  border-radius: 25%;
+}
+.havingPlan{
+  background-color: #8cc3dd;
+  border-radius : 50%;
+  width: 6px;
+  height: 6px;
+  margin: auto;
+}
+.purple{
+  background-color: #a589f5;
+}
+.red{
+  background-color: #ed3636;
+}
+.yellow{
+  background-color: #f6e067;
+}
+.blackblue{
+  background-color: #15304b;
+}
+/*----------------------------index-----------------------------*/
+.headerSlide{
+  background-image: url('main5.jpg');
+}
+.hprev, .hnext {
+  background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+  padding: 12px 14px;
+  color: #f3f6fb;
+  font-size: 1.25em;
+}
+.hprev:hover, .hnext:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.headerTextWrap{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 200px 12px;
+  margin: 0 0 0 10%;
+  position: relative;
+  width: 80%;
+  text-align: right;
+}
+.headerTitle{
+  font-size: 2em;
+  color: #2c2c2c;
+  font-weight: bold;
+}
+
+.headerText{
+  font-size: 1.3em;
+  color: #6f6f6f;
+}
+.slideButton{
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+.lightwhite{
+  color: #ddd;
+  font-weight: bold;
+}
+.white{
+  color: #ddd;
+}
+
+.project_main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.navbar_main{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  grid-gap: 10px;
+  position: relative;
+  height: auto;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.nav_main{
+  padding: 14px 16px;
+  text-align: center;
+  float: left;
+  font-size: 0.9em;
+}
+.nav_main:hover{
+  border-bottom: 3px solid #F7786B;
+}
+.top{
+  padding: 14px 16px;
+  font-size: 0.85em;
+  background-color: #F7786B;
+  margin-left: 70%;
+  margin-right: 20%;
+  margin: 20px 10% 20px 80%;
+  border-radius: 10px;
+}
+.top a{
+  color: #f3f6fb;
+}
+.top:hover{
+  background-color: #d36559;
+}
+.lessBMargin{
+  margin-bottom: 10px;
+}
+.weekDay_main{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+.day_main{
+  font-size: 3em;
+  padding-left: 20px;
+}
+.daySpan_main{
+  font-size: 0.5em;
+}
+.weekplan_main{
+  display: grid;
+  grid-template-columns: 55% 20%;
+  justify-content: center;
+}
+
+.todo_main{
+  background-color: #F5F1E7;
+  padding: 20px 10%;
+}
+.todo_ul{
+  padding: 10px 0 10px 0;
+}
+.portfolio_main{
+  text-align: center;
+  padding: 10px 0;
+}
+.portfolioText{
+  padding: 10px 0 20px 0;
+  height: 100%;
+  overflow: auto;
+}
